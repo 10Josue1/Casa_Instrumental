@@ -504,6 +504,8 @@ public void insertarDatos() {
             ResultSet rs = st.executeQuery(query);
             System.out.println(rs + "Resultado de busqueda");
             
+            System.out.println("Este es un cambio");
+            
             while(rs.next()){
                 int codigo_temp = rs.getInt(1);
                 codigo_producto_encontrado = rs.getInt(1);
@@ -512,6 +514,8 @@ public void insertarDatos() {
 //                System.out.println(codigo_producto_encontrado);
                 
             }
+            
+            
             
             if(nombre_producto_encontrado.length() > 1){
                 JOptionPane.showMessageDialog(null, """
